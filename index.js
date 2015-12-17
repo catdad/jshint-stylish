@@ -26,6 +26,7 @@ module.exports = {
 
 			var line = [
 				'',
+				chalk.gray(err.code),
 				chalk.gray('line ' + err.line),
 				chalk.gray('col ' + err.character),
 				isError ? chalk.red(err.reason) : chalk.cyan(err.reason)
